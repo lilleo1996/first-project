@@ -1,0 +1,15 @@
+html
+  head
+    title= title
+  body
+    h2(style="color: red")= title
+    form(action = "/login", method = "POST")
+      div.username
+        label(for="username") Username: 
+        input(name="username" type="text") 
+      br
+      div.password
+        label(for="password") Password: 
+        input(name="password" type="password") 
+      br
+      button(type="submit") Login
